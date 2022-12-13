@@ -91,3 +91,8 @@ tr:nth-child(even) {
         text-align: left;
     }
 }
+
+.responsive {
+    width: 100%;
+    height: auto;
+}
