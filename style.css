@@ -93,7 +93,6 @@ tr:nth-child(even) {
 @media screen and (max-width: 600px) {
     .navbar.responsive {
         position: sticky;
-        top: 0px;
     }
 
     .navbar.responsive a.icon {
