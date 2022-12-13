@@ -40,7 +40,7 @@ tr:nth-child(even) {
 
 /* Add a black background color to the top navigation */
 .navbar {
-    background-color: rgb(31, 31, 38);
+    background-color: #C61000;
     overflow: hidden;
     position: fixed;
     width: 100%;
@@ -61,8 +61,8 @@ tr:nth-child(even) {
 
 /* Change the color of links on hover */
 .navbar a:hover {
-    background-color: white;
-    color: black;
+    background-color: rgb(31, 31, 38);
+    color: white;
 }
 
 /* Add an active class to highlight the current page */
@@ -134,8 +134,8 @@ tr:nth-child(even) {
 /* Dropdown button on hover & focus */
 .dropbtn:hover,
 .dropbtn:focus {
-    background-color: white;
-    color: black;
+    background-color: rgb(31, 31, 38);
+    color: white;
 }
 
 /* The container <div> - needed to position the dropdown content */
@@ -148,7 +148,7 @@ tr:nth-child(even) {
 .dropdown-content {
     display: none;
     position: absolute;
-    background-color: rgb(31, 31, 38);
+    background-color: #C61000;
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     z-index: 1;
@@ -164,11 +164,41 @@ tr:nth-child(even) {
 
 /* Change color of dropdown links on hover */
 .dropdown-content a:hover {
-    background-color: white;
-    color: black;
+    background-color: rgb(31, 31, 38);
+    color: white;
 }
 
 /* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
 .show {
     display: block;
+}
+
+/* SOCIAL BUTTONS */
+
+/* Style all font awesome icons */
+.fa {
+    /* padding: 20px; */
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+}
+
+/* Add a hover effect if you want */
+.fa:hover {
+    opacity: 0.7;
+}
+
+/* Set a specific color for each brand */
+
+/* Instagram */
+.fa-instagram {
+    background: #125688;
+    color: white;
+}
+
+/* YouTube */
+.fa-youtube {
+    background: #bb0000;
+    color: white;
 }
