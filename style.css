@@ -18,6 +18,16 @@
     src: url('//www.formula1.com/etc/designs/fom-website/fonts/F1Wide/Formula1-Wide.ttf') format('truetype');
 }
 
+table,
+th,
+td {
+    padding: 5px;
+}
+
+body {
+    background: white;
+}
+
 html,
 body {
     scroll-behavior: smooth;
