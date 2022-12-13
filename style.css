@@ -50,7 +50,7 @@ tr:nth-child(even) {
 .topnav a {
     float: left;
     display: block;
-    color: #000000;
+    color: white;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
