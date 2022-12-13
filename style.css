@@ -28,10 +28,6 @@ body {
     overflow-x: hidden;
 }
 
-h1 {
-    margin-top: 50px;
-}
-
 tr:nth-child(odd) {
     background-color: #f4f4f4;
 }
