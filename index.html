@@ -1,77 +1,149 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mini Bike Racing</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML CSS Website</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.14.0/css/all.css"
+      integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <!-- Navbar Section -->
+    <nav class="navbar">
+      <div class="navbar__container">
+        <a href="/" id="navbar__logo"><img src="images/mbrBanner.PNG" style="height: 32px;"></a>
+        <div class="navbar__toggle" id="mobile-menu">
+          <span class="bar"></span> <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+        <ul class="navbar__menu">
+          <li class="navbar__item">
+            <a href="/" class="navbar__links">Home</a>
+          </li>
+          <li class="navbar__item">
+            <a href="/tech.html" class="navbar__links">Videos</a>
+          </li>
+          <li class="navbar__item">
+            <a href="/" class="navbar__links">Standings</a>
+          </li>
+          <li class="navbar__item">
+            <a href="/" class="navbar__links">Results</a>
+          </li>
+          <li class="navbar__item">
+            <a href="/" class="navbar__links">Regulations</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
-    <div class="navbar" id="navbar">
-        <a href="index.html" class="active"><img
-                src="https://raw.githubusercontent.com/sprucese/sprucese.github.io/main/assets/8AEFB9B2-F36C-4623-8D36-1EEFE1A28963.PNG"
-                style="height: 32px;"></a>
-        <a href="index.html">Home</a>
-        <a href="videos.html">Videos</a>
-        <a href="results.html">Results</a>
-        <a href="regulations.html">Regulations</a>
-        <a href="test.html">Contact</a>
-        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-            <i class="fa fa-bars"></i>
-        </a>
+    <!-- Hero Section -->
+    <div class="main">
+      <div class="main__container">
+        <div class="main__content">
+          <h1>NEXT LEVEL</h1>
+          <h2>COMPETITION</h2>
+          <p>See what makes the difference</p>
+          <button class="main__btn"><a href="#">Drivers & Teams</a></button>
+        </div>
+        <div class="main__img--container">
+          <img id="main__img" src="images/Layer 0.png" />
+        </div>
+      </div>
     </div>
-</head>
 
-<body>
-    <br>
-    <img src="https://raw.githubusercontent.com/sprucese/sprucese.github.io/main/assets/IMG_1360.PNG" alt="Banner"
-        class="responsive center">
+    <!-- Services Section -->
+    <div class="services">
+      <h1>Find out what the hype is about</h1>
+      <div class="services__container">
+        <div class="services__card">
+          <h2>Experience the Thrill</h2>
+          <p>High-intensity racing</p>
+          <button>Watch Races</button>
+        </div>
+        <div class="services__card">
+          <h2>Who's Got the Lead?</h2>
+          <p>Razor-thin margins</p>
+          <button>Check Standings</button>
+        </div>
+      </div>
+    </div>
 
-    <h1 style="font-family: 'Formula1-Black'; text-align: center"> 2023 Standings</h1>
-
-    <table
-        style="outline: 0px solid #f4f4f4; width:100%; font-family: 'Formula1-Regular'; height: 45px; text-align: left;">
-        <tr style="height: 40px; font-family: 'Formula1-Black';">
-            <th>Position</th>
-            <th style="width:75%;">Team</th>
-            <th>Points</th>
-        </tr>
-        <tr style="height: 50px;">
-            <td>1st</td>
-            <td style="font-family: 'Formula1-Bold';">Green Bull Racing</td>
-            <td>0</td>
-        </tr>
-        <tr style="height: 50px;">
-            <td>2nd</td>
-            <td style="font-family: 'Formula1-Bold';">Papaya Racing</td>
-            <td>0</td>
-        </tr>
-        <tr style="height: 50px;">
-            <td>3rd</td>
-            <td style="font-family: 'Formula1-Bold';">Arrows Racing</td>
-            <td>0</td>
-        </tr>
-        <tr style="height: 50px;">
-            <td>4th</td>
-            <td style="font-family: 'Formula1-Bold';">Fortnite Racing</td>
-            <td>0</td>
-        </tr>
-        <tr style="height: 50px;">
-            <td>5th</td>
-            <td style="font-family: 'Formula1-Bold';">Bigfoot Racing</td>
-            <td>0</td>
-        </tr>
-    </table>
-
-    <!-- Add font awesome icons -->
-    <a href="#" class="fa fa-instagram"></a>
-    <a href="#" class="fa fa-youtube"></a>
-</body>
-
+    <!-- Footer Section -->
+    <div class="footer__container">
+      <div class="footer__links">
+        <div class="footer__link--wrapper">
+          <div class="footer__link--items">
+            <h2>About</h2>
+            <a href="/">Drivers</a> <a href="/">Teams</a>
+            <a href="/">Standings</a> <a href="/">Results</a>
+          </div>
+          <div class="footer__link--items">
+            <h2>Videos</h2>
+            <a href="/">Playlist</a> <a href="/">Races</a>
+            <a href="/">Practice</a> <a href="/">Highlights</a>
+          </div>
+        </div>
+        <div class="footer__link--wrapper">
+          <div class="footer__link--items">
+            <h2>Contact</h2>
+            <a href="/">Feedback</a> <a href="/">Regulations</a>
+            <a href="/">Penalty Protest</a> <a href="/">Applications</a>
+          </div>
+          <div class="footer__link--items">
+            <h2>Socials</h2>
+            <a href="/">Website</a> <a href="/">Instagram</a>
+            <a href="/">Youtube</a> <a href="/">Twitter</a>
+          </div>
+        </div>
+      </div>
+      <section class="social__media">
+        <div class="social__media--wrap">
+          <div class="footer__logo">
+            <a href="/" id="footer__logo"><img src="images/mbrBanner.PNG" style="height: 32px;"></a>
+          </div>
+          <p class="website__rights">© SRA 2023. All rights reserved</p>
+          <div class="social__icons">
+            <a
+              class="social__icon--link"
+              href="/"
+              target="_blank"
+              aria-label="Safari"
+            >
+              <i class="fab fa-safari"></i>
+            </a>
+            <a
+              class="social__icon--link"
+              href="/"
+              target="_blank"
+              aria-label="Instagram"
+            >
+              <i class="fab fa-instagram"></i>
+            </a>
+            <a
+              class="social__icon--link"
+              href="/"
+              target="_blank"
+              aria-label="Youtube"
+            >
+              <i class="fab fa-youtube"></i>
+            </a>
+            <a
+              class="social__icon--link"
+              href="/"
+              target="_blank"
+              aria-label="Twitter"
+            >
+              <i class="fab fa-twitter"></i>
+            </a>
+          </div>
+        </div>
+      </section>
+    </div>
+    <script src="app.js"></script>
+  </body>
 </html>
